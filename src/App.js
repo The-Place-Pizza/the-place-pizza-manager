@@ -1,5 +1,6 @@
 import './App.css';
 import Signup from './components/Signup';
+import Login from './components/Login';
 import { Container } from 'react-bootstrap';
 import { AuthProvider } from './contexts/AuthContext';
 import { createBrowserRouter, RouterProvider as Router, Route } from 'react-router-dom';
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: 'signup',
         element: <Signup />,
+      },
+      {
+        path: 'login',
+        element: <Login />,
       }
     ]
   },
