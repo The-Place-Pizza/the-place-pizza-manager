@@ -6,7 +6,6 @@ export default function Root() {
         <>
             <div id='detail'>
                 <AuthProvider>
-                    <h1>Dashboard</h1>
                     <Outlet />
                 </AuthProvider>
             </div>
