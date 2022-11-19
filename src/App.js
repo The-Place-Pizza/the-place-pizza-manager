@@ -6,6 +6,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import { createBrowserRouter, RouterProvider as Router } from 'react-router-dom';
 import Root from './components/Root';
 import PrivateRouteDashboard from './components/PrivateRouteDashboard';
+import ForgotPassword from './components/ForgotPassword';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <PrivateRouteDashboard />,
+      },
+      {
+        path: 'forgot-password',
+        element: <ForgotPassword />,
       }
     ]
   },
