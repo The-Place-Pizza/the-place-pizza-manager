@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider as Router } from 'react-router-dom'
 import Root from './components/Root';
 import PrivateRouteDashboard from './components/PrivateRouteDashboard';
 import ForgotPassword from './components/ForgotPassword';
+import PrivateRouteUpdateProfile from './components/PrivateRouteUpdateProfile';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: 'forgot-password',
         element: <ForgotPassword />,
+      },
+      {
+        path: 'update-profile',
+        element: <PrivateRouteUpdateProfile />,
       }
     ]
   },
