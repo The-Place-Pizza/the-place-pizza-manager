@@ -3,7 +3,7 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import { Container } from 'react-bootstrap';
 import { AuthProvider } from './contexts/AuthContext';
-import { createBrowserRouter, RouterProvider as Router } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider as Router, redirect } from 'react-router-dom';
 import Root from './components/Root';
 import PrivateRouteDashboard from './components/PrivateRouteDashboard';
 import ForgotPassword from './components/ForgotPassword';
@@ -12,8 +12,7 @@ import PrivateRouteUpdateProfile from './components/PrivateRouteUpdateProfile';
 const router = createBrowserRouter([
   {
     path: '/',
-    element:
-      <Root />,
+    element: <Root />,
     children: [
       {
         path: 'signup',

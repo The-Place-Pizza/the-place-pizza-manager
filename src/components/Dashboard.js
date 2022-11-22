@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Button, Alert } from 'react-bootstrap';
-import { useAuth } from '../contexts/AuthContext'
+import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
@@ -25,7 +25,8 @@ export default function Dashboard() {
                 <Card.Body>
                     <h2 className="text-center mb-4">Dashboard</h2>
                     {error && <Alert variant="danger">{error}</Alert>}
-                    {/* <strong>Email:</strong> {currentUser.email} */}
+                    <strong>Email:</strong> {currentUser.email}
+                    <Button className='w-100' onClick={() => navigate('/update-profile')}>Update Profile</Button>
                 </Card.Body>
             </Card>
             <div className="w-100 text-center mt-2">
